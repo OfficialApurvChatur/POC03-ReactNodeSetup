@@ -24,9 +24,9 @@
 - Backend
   - Local: [http://localhost:5003](http://localhost:5003)
   - Build: [http://localhost:5003](http://localhost:5003)
-  - Production: []()
+  - Production: [https://react-node-backend-v01.onrender.com](https://react-node-backend-v01.onrender.com)
 
 - Frontend
   - Local: [http://localhost:5173/](http://localhost:5173/)
   - Build: [http://localhost:4173/](http://localhost:4173/)
-  - Production: []()
+  - Production: [https://react-node-frontend-v01.netlify.app](https://react-node-frontend-v01.netlify.app)
