@@ -1,7 +1,9 @@
 import http from "http";
+import "./aConnection/aEnvironmentConnection.js";
+import { getEnvironment } from "./aConnection/aEnvironmentConnection.js";
 
 
-const PORT = 5003;
+const PORT = process.env.PORT || 5003;
 
 const init = () => {
   // 1. Create node connection
@@ -20,7 +22,7 @@ const init = () => {
 
   // 2. Listen node connection
   nodeConnection.listen(PORT, () => {
-    console.log(`Node connection listenning on http://localhost:${PORT} at PORT: ${PORT}`)
+    console.log(`Node connection listenning on http://localhost:${PORT} at PORT: ${PORT} (for ${getEnvironment().current_env})`)
   })
 }
 
