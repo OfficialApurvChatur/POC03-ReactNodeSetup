@@ -8,14 +8,18 @@
     subgraph Frontend["Frontend"]
       React["React"]
     end
-    
     subgraph Backend["Backend"]
       Node["Node"]
     end
 
+    subgraph Testing["Testing"]
+      
+    end
+    
     Database["Database"]
 
     User --> Frontend
+    Testing --> Frontend
     Frontend --> Backend
     Backend --> Database
 ```
@@ -39,3 +43,17 @@
   - Local: [http://localhost:5173/](http://localhost:5173/)
   - Build: [http://localhost:4173/](http://localhost:4173/)
   - Production: [https://react-node-frontend-v01.netlify.app](https://react-node-frontend-v01.netlify.app)
+
+- Testing Report
+  - Development
+    - Local: [http://localhost:9323](http://localhost:9323)
+    - Live: []()
+  - Testing
+    - Local: []()
+    - Live: []()
+  - Staging
+    - Local: []()
+    - Live: []()
+  - Production
+    - Local: []()
+    - Live: []()
